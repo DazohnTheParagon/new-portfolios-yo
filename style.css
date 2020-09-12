@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+.header{
+    padding: 80px;
+    text-align: center;
+    background: #aea3b0;
+    color: black;
+}
+.header h1{
+    font-size:40px;
+      /* sets text color to white */
+  color: #fff;
+  /* Centers the text */
+  text-align: center;
+  /* Removes the default margin/spacing around
+     the h1 element */
+  margin: 0;
+  /* Pushes the text down 20 pixels from
+     the top of the page */
+  padding-top: 20px;
+}
+header nav {
+  /* The default is block and we change to flex */
+  display: flex;
+  /* Centers an element defined as `display: flex` */
+  justify-content: center;
+}
+nav{
+    overflow: hidden;
+    background-color:#785964;
+}
+nav a{
+    float: left;
+    display: block;
+    color:#bcd4de;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+nav a.right {
+    float:right;
+}
+nav a.hover {
+    background-color: powderblue;
+    color:black;
+}
+* {
+    box-sizing: border-box;
+}
+.row{
+    display:flex;
+    flex-wrap:wrap;
+}
+side{
+    flex:30%;
+    background-color: #bcd4de;
+    padding: 20px;
+}
+.main{
+    flex: 70%;
+    background-color: #8e9aaf;
+    padding:20px
+}
+@media screen and (max-width: 700px) {
+    .row{
+        flex-direction:column;
+    }
+}
+@media screen and (max-width: 400px){
+    .navbar a{
+        float:none;
+        width:100%;
+    }
+}
+/*footer{
+    padding:15px;
+    width: 100%;
+    text-align:center;
+    background: #3a435e;
+    vertical-align:middle;
+    color:lavender;
+    height: auto;
+}*/
+ul > li > a
+{
+  padding:10px;
+text-decoration: none;
+color:#c0b9dd;
+
+}
+ul > li > a:hover{ color:#aea3b0; }
+
+ul{
+ 
+  margin:0px auto;
+}
+li { display: inline; }
+
+.header1{
+  font-size: 20px;  
+  font-family: 'Roboto Slab', serif;
+}
+
+.about-me{
+    padding: 15px;
+    width:100%;
+    text-align: left-align;
+    background: #dee2ff;
+    color: black;
+}
+
+
+body{
+  background-color:#dee2ff;
+  position: relative
+}
+
+.header h2{
+    font-size:20px;
+}
+body, html {
+    height:100%; /* ADD this */
+}
+
+footer {
+      background-color: #785964;
+      width: 100%;
+      text-align: center;
+      color:#000000;    
+      height: 100px;   
+      padding-top: 10px;     
+}
+
+li {
+  display: list-item;
+  list-style-position: inside;
+}
+ img{
+   width: 100%;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   margin-bottom: 10px
+ }
+ header nav ul li a {
+  /* The link color is white */
+  color: #fff;
+  /* Removes the underline to the link */
+  text-decoration: none;
+  /* Applies 20 pixels of margin to the right of each link 
+     creating a visual gap between the navigation links */
+  margin: 0 20px 0 0;
+}
